@@ -11,20 +11,20 @@ function handleClick(e) {
 
 function greet(timeString)
 {
-  let comparsionTime = timeString.split(":").join("");
+  let comparsionTime = timeString.split(':').join('');
   let numTime = parseInt(comparsionTime);
   
    if(numTime >= 0 &&  numTime < 1200)
   {
-    return "Good Morning";
+    return 'Good Morning';
   }
   else if(numTime >= 1200 && numTime < 1700)
   {
-    return "Good Afternoon";
+    return 'Good Afternoon';
   }
   else if(numTime > 1700)
   {
-    return "Good Evening";
+    return 'Good Evening';
   }
 }
 
@@ -32,5 +32,5 @@ function greet(timeString)
 
 function displayMessage(message)
 {
-  document.getElementById("greeting").innerText = message;
+  document.getElementById('greeting').innerText = message;
 }
