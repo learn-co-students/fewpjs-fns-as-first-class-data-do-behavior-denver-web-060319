@@ -10,7 +10,6 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 function greet(timeString) {
   const time = parseInt(timeString, 10)
-  console.log(timeString)
   if (time < 0) {
     return "That's not a real time!"
   }
