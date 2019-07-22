@@ -11,7 +11,10 @@ function handleClick(e) {
 function greet(timeString) {
   const time = parseInt(timeString, 10)
   console.log(timeString)
-  if (time < 12) {
+  if (time < 0) {
+    return "That's not a real time!"
+  }
+  else if (time < 12) {
     return "Good Morning"
   }
   else if (time < 17) {
