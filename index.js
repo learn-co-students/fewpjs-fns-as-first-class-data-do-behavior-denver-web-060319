@@ -5,7 +5,21 @@ function handleClick(e) {
   displayMessage(greet(timeString))
 }
 
-/* End Given Code, don't edit above here...*/
+const greet = (time) => {
+  const parsedTime = parseInt(time)
+  
+  if (parsedTime < 12) {
+      return "Good Morning"
+  } else if (parsedTime >= 12 && parsedTime <= 17) {
+      return "Good Afternoon"
+  } else if (parsedTime > 17) {
+      return "Good Evening"
+  }
+}
 
-/* Write your implementation of greet() */
-/* Write your implementation of displayMessage() */
+const displayMessage = (fn) => {
+  const greeting = document.getElementById('greeting')
+  greeting.innerText = fn
+  return greeting
+}
+
