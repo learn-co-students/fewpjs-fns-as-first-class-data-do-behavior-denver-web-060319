@@ -1,5 +1,3 @@
-/* Given Code, don't edit */
-
 function handleClick(e) {
   const timeString = document.getElementById('time').value
   displayMessage(greet(timeString))
@@ -18,8 +16,6 @@ const greet = (time) => {
 }
 
 const displayMessage = (fn) => {
-  const greeting = document.getElementById('greeting')
-  greeting.innerText = fn
-  return greeting
+  document.getElementById('greeting').innerText = fn
 }
 
